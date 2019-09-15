@@ -9,8 +9,9 @@
 #import "YiDQViewController.h"
 #import "YiDispatchQueue.h"
 @interface YiDQViewController ()
-@property (nonatomic, strong) YiDispatchQueue *dispatchQueue;
+@property (nonatomic, strong) YiDispatchQueue *queue;
 @end
+
 
 @implementation YiDQViewController
 
@@ -18,10 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _dispatchQueue = [[YiDispatchQueue alloc] init];
-    [_dispatchQueue dispatch:^{
+    
+    _queue = [[YiDispatchQueue alloc] init];
+    [_queue dispatch:^{
         NSLog(@"hello, this is test queue");
     }];
+    
+    [[YiDispatchQueue concurrentDefaultQueue] dispatch:^{
+        NSLog(@"hello, this is test concurrent queue");
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
