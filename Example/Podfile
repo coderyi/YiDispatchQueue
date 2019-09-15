@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YiDispatchQueue_Example' do
+  pod 'YiDispatchQueue', :path => '../'
+
+  target 'YiDispatchQueue_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module YiDispatchQueue {
+  umbrella header "YiDispatchQueue-umbrella.h"
+
+  export *
+  module * { export * }
+}

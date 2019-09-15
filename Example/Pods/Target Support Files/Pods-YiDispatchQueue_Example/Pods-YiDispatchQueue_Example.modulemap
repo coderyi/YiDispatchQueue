@@ -1,0 +1,6 @@
+framework module Pods_YiDispatchQueue_Example {
+  umbrella header "Pods-YiDispatchQueue_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

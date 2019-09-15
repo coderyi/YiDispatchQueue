@@ -1,0 +1,16 @@
+PODS:
+  - YiDispatchQueue (0.1.0)
+
+DEPENDENCIES:
+  - YiDispatchQueue (from `../`)
+
+EXTERNAL SOURCES:
+  YiDispatchQueue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YiDispatchQueue: d3af29085f425cb61b90f6e3bf043f4e707b439e
+
+PODFILE CHECKSUM: 7a3cb23efc3f4e526237ee39c696f0dca4580dc0
+
+COCOAPODS: 1.7.1
