@@ -1,6 +1,19 @@
 # YiDispatchQueue
 
+a more convenient tool for using dispatch queue
 
+## Usage
+
+```
+_queue = [[YiDispatchQueue alloc] init];
+[_queue dispatch:^{
+    NSLog(@"hello, this is test queue");
+}];
+    
+[[YiDispatchQueue concurrentDefaultQueue] dispatch:^{
+    NSLog(@"hello, this is test concurrent queue");
+}];
+```
 
 ## Example
 
