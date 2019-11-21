@@ -1,6 +1,6 @@
 # YiDispatchQueue
 
-a more convenient tool for using dispatch queue
+a more convenient tool for dispatch queue
 
 ## Usage
 
